@@ -1,0 +1,287 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:isactr="http://schemas.uipath.com/workflow/integration-service-activities/isactr" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:si="clr-namespace:System.IO;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uiascb="clr-namespace:UiPath.IntegrationService.Activities.SWEntities.C535C41D0C8_v2_sub_generateChatCompletion_Create.Bundle;assembly=C535C41D0C8_v2_sub_g.nK5Lk1NhW5I1ZxX4m13lSx81" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.Shared.Activities.Business</x:String>
+      <x:String>UiPath.PDF.Activities</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.IntegrationService.Activities.Runtime.Models.FilterBuilder</x:String>
+      <x:String>UiPath.IntegrationService.Activities.Runtime.Models</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>UiPath.IntegrationService.Activities.Runtime.Helpers.TypeDetailsCustomization</x:String>
+      <x:String>UiPath.IntegrationService.Activities.Runtime.Activities</x:String>
+      <x:String>UiPath.Platform.Activities</x:String>
+      <x:String>UiPath.IntegrationService.Activities.SWEntities.C535C41D0C8_v2_sub_generateChatCompletion_Create.Bundle</x:String>
+      <x:String>System.Text.RegularExpressions</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Platform.ResourceHandling</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.PDF.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.Watcher</AssemblyReference>
+      <AssemblyReference>System.IO.Packaging</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.AccessControl</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.DriveInfo</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>NPOI.Core</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.IntegrationService.Activities.Runtime</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>C535C41D0C8_v2_sub_g.nK5Lk1NhW5I1ZxX4m13lSx81</AssemblyReference>
+      <AssemblyReference>System.Text.RegularExpressions</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="1909,2390" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="strPdfText" />
+      <Variable x:TypeArguments="x:String" Name="strAY" />
+      <Variable x:TypeArguments="x:String" Name="strGenAi" />
+      <Variable x:TypeArguments="sd:DataTable" Name="dtTables" />
+      <Variable x:TypeArguments="x:String" Name="strPan" />
+      <Variable x:TypeArguments="x:String" Name="strDeduction" />
+      <Variable x:TypeArguments="x:String" Name="strGross" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:BuildDataTable DataTable="[dtTables]" DisplayName="Build Data Table" sap:VirtualizedContainerService.HintSize="484,92" sap2010:WorkflowViewState.IdRef="BuildDataTable_1" TableInfo="&lt;NewDataSet&gt;&#xD;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xD;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xD;&#xA;      &lt;xs:complexType&gt;&#xD;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xD;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xD;&#xA;            &lt;xs:complexType&gt;&#xD;&#xA;              &lt;xs:sequence&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Tax_x0020_payerID&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xD;&#xA;                  &lt;xs:simpleType&gt;&#xD;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xD;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xD;&#xA;                    &lt;/xs:restriction&gt;&#xD;&#xA;                  &lt;/xs:simpleType&gt;&#xD;&#xA;                &lt;/xs:element&gt;&#xD;&#xA;                &lt;xs:element name=&quot;PAN&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;AY&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Gross_x0020_Income&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;TDS&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Deduction&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Period&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Summary&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;              &lt;/xs:sequence&gt;&#xD;&#xA;            &lt;/xs:complexType&gt;&#xD;&#xA;          &lt;/xs:element&gt;&#xD;&#xA;        &lt;/xs:choice&gt;&#xD;&#xA;      &lt;/xs:complexType&gt;&#xD;&#xA;    &lt;/xs:element&gt;&#xD;&#xA;  &lt;/xs:schema&gt;&#xD;&#xA;  &lt;TableName&gt;&#xD;&#xA;    &lt;Tax_x0020_payerID&gt;text&lt;/Tax_x0020_payerID&gt;&#xD;&#xA;  &lt;/TableName&gt;&#xD;&#xA;&lt;/NewDataSet&gt;" />
+    <ui:ForEachFileX DisplayName="For Each File in Folder" Folder="C:\Users\rxcre\OneDrive\Documents\UiPath\Tax filling System\input" sap:VirtualizedContainerService.HintSize="484,2136" sap2010:WorkflowViewState.IdRef="ForEachFileX_1" IncludeSubDirectories="False" OrderBy="NameAscFirst" SkipFolderWithoutPermission="False">
+      <ui:ForEachFileX.Body>
+        <ActivityAction x:TypeArguments="si:FileInfo, x:Int32">
+          <ActivityAction.Argument1>
+            <DelegateInArgument x:TypeArguments="si:FileInfo" Name="CurrentFile" />
+          </ActivityAction.Argument1>
+          <ActivityAction.Argument2>
+            <DelegateInArgument x:TypeArguments="x:Int32" Name="CurrentIndex" />
+          </ActivityAction.Argument2>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,1840" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="x:String" Name="strTDS" />
+              <Variable x:TypeArguments="x:String" Name="strPayerId" />
+              <Variable x:TypeArguments="x:String" Name="strPerion" />
+              <Variable x:TypeArguments="x:String" Name="strSumarry" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:ReadPDFText PreserveFormatting="{x:Null}" DisplayName="Read PDF Text" FileName="[CurrentFile.ToString]" sap:VirtualizedContainerService.HintSize="416,115" sap2010:WorkflowViewState.IdRef="ReadPDFText_1" Range="All" Text="[strPdfText]" />
+            <isactr:ConnectorActivity Configuration="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" ConnectionId="335eb7bd-f702-4503-be1a-5a535c41d0c8" DisplayName="Content Generation" sap:VirtualizedContainerService.HintSize="416,424" sap2010:WorkflowViewState.IdRef="ConnectorActivity_1" UiPathActivityTypeId="aba52a00-4c05-318d-8f99-5ad924b2f277">
+              <isactr:ConnectorActivity.FieldObjects>
+                <isactr:FieldObject Name="modelName" Type="FieldArgument">
+                  <isactr:FieldObject.Value>
+                    <InArgument x:TypeArguments="x:String">gpt-4o-mini-2024-07-18</InArgument>
+                  </isactr:FieldObject.Value>
+                </isactr:FieldObject>
+                <isactr:FieldObject Name="prompt" Type="FieldArgument">
+                  <isactr:FieldObject.Value>
+                    <InArgument x:TypeArguments="x:String" xml:space="preserve">[strPdfText + "
+Task: Parse the above financial text and extract:
+1. PAN (Permanent Account Number)
+2. Assessment Year (AY)
+3. Gross Income
+4. TDS
+5. Deductions
+and summarize the tax statement
+
+Return output in the exact structure below:
+Taxpayer ID:{id}
+PAN: {PAN}
+AY: {AssessmentYear}
+Gross Income: {GrossIncome}
+TDS: {TDS}
+Deductions: {Deductions}
+Period:  {perion}
+Summary:{summary}
+
+Rules:
+- Do not add any extra commentary or explanation.
+- Ensure values are clean and without symbols except numbers and letters.
+"]</InArgument>
+                  </isactr:FieldObject.Value>
+                </isactr:FieldObject>
+                <isactr:FieldObject Name="isPIIEnabled" Type="FieldArgument">
+                  <isactr:FieldObject.Value>
+                    <InArgument x:TypeArguments="x:Boolean">False</InArgument>
+                  </isactr:FieldObject.Value>
+                </isactr:FieldObject>
+                <isactr:FieldObject Name="isFilterPIIEnabled" Type="FieldArgument" />
+                <isactr:FieldObject Name="languageCode" Type="FieldArgument" />
+                <isactr:FieldObject Name="piiEntityCategories_array" Type="FieldArgument" />
+                <isactr:FieldObject Name="confidenceThreshold" Type="FieldArgument" />
+                <isactr:FieldObject Name="topK" Type="FieldArgument" />
+                <isactr:FieldObject Name="contextGrounding" Type="FieldArgument">
+                  <isactr:FieldObject.Value>
+                    <InArgument x:TypeArguments="x:String">None</InArgument>
+                  </isactr:FieldObject.Value>
+                </isactr:FieldObject>
+                <isactr:FieldObject Name="_file" Type="FieldArgument" />
+                <isactr:FieldObject Name="folderKey" Type="FieldArgument" />
+                <isactr:FieldObject Name="topP" Type="FieldArgument" />
+                <isactr:FieldObject Name="indexID" Type="FieldArgument" />
+                <isactr:FieldObject Name="numberOfResults" Type="FieldArgument" />
+                <isactr:FieldObject Name="top_p" Type="FieldArgument">
+                  <isactr:FieldObject.Value>
+                    <InArgument x:TypeArguments="x:Int64">1</InArgument>
+                  </isactr:FieldObject.Value>
+                </isactr:FieldObject>
+                <isactr:FieldObject Name="instruction" Type="FieldArgument">
+                  <isactr:FieldObject.Value>
+                    <InArgument x:TypeArguments="x:String">You are a intelligent bot</InArgument>
+                  </isactr:FieldObject.Value>
+                </isactr:FieldObject>
+                <isactr:FieldObject Name="max_tokens" Type="FieldArgument">
+                  <isactr:FieldObject.Value>
+                    <InArgument x:TypeArguments="x:Int64" />
+                  </isactr:FieldObject.Value>
+                </isactr:FieldObject>
+                <isactr:FieldObject Name="temperature" Type="FieldArgument">
+                  <isactr:FieldObject.Value>
+                    <InArgument x:TypeArguments="x:Double">0</InArgument>
+                  </isactr:FieldObject.Value>
+                </isactr:FieldObject>
+                <isactr:FieldObject Name="frequency_penalty" Type="FieldArgument">
+                  <isactr:FieldObject.Value>
+                    <InArgument x:TypeArguments="x:Int64">0</InArgument>
+                  </isactr:FieldObject.Value>
+                </isactr:FieldObject>
+                <isactr:FieldObject Name="presence_penalty" Type="FieldArgument">
+                  <isactr:FieldObject.Value>
+                    <InArgument x:TypeArguments="x:Int64">0</InArgument>
+                  </isactr:FieldObject.Value>
+                </isactr:FieldObject>
+                <isactr:FieldObject Name="n" Type="FieldArgument">
+                  <isactr:FieldObject.Value>
+                    <InArgument x:TypeArguments="x:Int64">1</InArgument>
+                  </isactr:FieldObject.Value>
+                </isactr:FieldObject>
+                <isactr:FieldObject Name="_stop" Type="FieldArgument">
+                  <isactr:FieldObject.Value>
+                    <InArgument x:TypeArguments="x:String" />
+                  </isactr:FieldObject.Value>
+                </isactr:FieldObject>
+                <isactr:FieldObject Name="out_text" Type="FieldArgument">
+                  <isactr:FieldObject.Value>
+                    <OutArgument x:TypeArguments="x:String">[strGenAi]</OutArgument>
+                  </isactr:FieldObject.Value>
+                </isactr:FieldObject>
+                <isactr:FieldObject Name="out_maskedText" Type="FieldArgument">
+                  <isactr:FieldObject.Value>
+                    <OutArgument x:TypeArguments="x:String" />
+                  </isactr:FieldObject.Value>
+                </isactr:FieldObject>
+                <isactr:FieldObject Name="Jit_v2_sub_generateChatCompletion" Type="FieldArgument">
+                  <isactr:FieldObject.Value>
+                    <OutArgument x:TypeArguments="uiascb:v2_sub_generateChatCompletion_Create" />
+                  </isactr:FieldObject.Value>
+                </isactr:FieldObject>
+                <isactr:FieldObject Name="out_contextGroundingCitationsString" Type="FieldArgument">
+                  <isactr:FieldObject.Value>
+                    <OutArgument x:TypeArguments="x:String" />
+                  </isactr:FieldObject.Value>
+                </isactr:FieldObject>
+              </isactr:ConnectorActivity.FieldObjects>
+            </isactr:ConnectorActivity>
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,175" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[strGenAi]" />
+            <ui:Matches BuilderPattern="(?&lt;=AY:\s*)\S+" DisplayName="Find Matching Patterns" FirstMatch="[strAY]" sap:VirtualizedContainerService.HintSize="416,92" sap2010:WorkflowViewState.IdRef="Matches_1" Input="[strGenAi]" IsBuilderTabModified="True" Model="[{&quot;Index&quot;:0,&quot;OperationID&quot;:&quot;ADV&quot;,&quot;OperationName&quot;:&quot;Advanced&quot;,&quot;OperationValue&quot;:&quot;(?&lt;=AY:\\s*)\\S+&quot;,&quot;QuantifierFirstValue&quot;:&quot;1&quot;,&quot;QuantifierID&quot;:&quot;EXT&quot;,&quot;QuantifierName&quot;:&quot;Exactly&quot;,&quot;QuantifierSecondValue&quot;:null}]" Pattern="(?&lt;=AY:\s*)\S+" RegexOption="IgnoreCase, Compiled" />
+            <ui:Matches BuilderPattern="(?&lt;=Gross\s*Income:\s*)\d+" DisplayName="Find Matching Patterns" FirstMatch="[strGross]" sap:VirtualizedContainerService.HintSize="416,92" sap2010:WorkflowViewState.IdRef="Matches_2" Input="[strGenAi]" IsBuilderTabModified="True" Model="[{&quot;Index&quot;:0,&quot;OperationID&quot;:&quot;ADV&quot;,&quot;OperationName&quot;:&quot;Advanced&quot;,&quot;OperationValue&quot;:&quot;(?&lt;=Gross\\s*Income:\\s*)\\d+&quot;,&quot;QuantifierFirstValue&quot;:&quot;1&quot;,&quot;QuantifierID&quot;:&quot;EXT&quot;,&quot;QuantifierName&quot;:&quot;Exactly&quot;,&quot;QuantifierSecondValue&quot;:null}]" Pattern="(?&lt;=Gross\s*Income:\s*)\d+" RegexOption="IgnoreCase, Compiled" />
+            <ui:Matches BuilderPattern="(?&lt;=TDS:\s*)\d+" DisplayName="Find Matching Patterns" FirstMatch="[strTDS]" sap:VirtualizedContainerService.HintSize="416,92" sap2010:WorkflowViewState.IdRef="Matches_3" Input="[strGenAi]" IsBuilderTabModified="True" Model="[{&quot;Index&quot;:0,&quot;OperationID&quot;:&quot;ADV&quot;,&quot;OperationName&quot;:&quot;Advanced&quot;,&quot;OperationValue&quot;:&quot;(?&lt;=TDS:\\s*)\\d+&quot;,&quot;QuantifierFirstValue&quot;:&quot;1&quot;,&quot;QuantifierID&quot;:&quot;EXT&quot;,&quot;QuantifierName&quot;:&quot;Exactly&quot;,&quot;QuantifierSecondValue&quot;:null}]" Pattern="(?&lt;=TDS:\s*)\d+" RegexOption="IgnoreCase, Compiled" />
+            <ui:Matches BuilderPattern="(?&lt;=Deductions:\s*)\d+" DisplayName="Find Matching Patterns" FirstMatch="[strDeduction]" sap:VirtualizedContainerService.HintSize="416,92" sap2010:WorkflowViewState.IdRef="Matches_4" Input="[strGenAi]" IsBuilderTabModified="True" Model="[{&quot;Index&quot;:0,&quot;OperationID&quot;:&quot;ADV&quot;,&quot;OperationName&quot;:&quot;Advanced&quot;,&quot;OperationValue&quot;:&quot;(?&lt;=Deductions:\\s*)\\d+&quot;,&quot;QuantifierFirstValue&quot;:&quot;1&quot;,&quot;QuantifierID&quot;:&quot;EXT&quot;,&quot;QuantifierName&quot;:&quot;Exactly&quot;,&quot;QuantifierSecondValue&quot;:null}]" Pattern="(?&lt;=Deductions:\s*)\d+" RegexOption="IgnoreCase, Compiled" />
+            <ui:Matches BuilderPattern="(?&lt;=PAN:\s*)[A-Z]*\d{4}[A-Z]" DisplayName="Find Matching Patterns" FirstMatch="[strPan]" sap:VirtualizedContainerService.HintSize="416,92" sap2010:WorkflowViewState.IdRef="Matches_5" Input="[strGenAi]" IsBuilderTabModified="True" Model="[{&quot;Index&quot;:0,&quot;OperationID&quot;:&quot;ADV&quot;,&quot;OperationName&quot;:&quot;Advanced&quot;,&quot;OperationValue&quot;:&quot;(?&lt;=PAN:\\s*)[A-Z]*\\d{4}[A-Z]&quot;,&quot;QuantifierFirstValue&quot;:&quot;1&quot;,&quot;QuantifierID&quot;:&quot;EXT&quot;,&quot;QuantifierName&quot;:&quot;Exactly&quot;,&quot;QuantifierSecondValue&quot;:null}]" Pattern="(?&lt;=PAN:\s*)[A-Z]*\d{4}[A-Z]" RegexOption="IgnoreCase, Compiled" />
+            <ui:Matches BuilderPattern="(?&lt;=Taxpayer ID:\s*)\S+" DisplayName="Find Matching Patterns" FirstMatch="[strPayerId]" sap:VirtualizedContainerService.HintSize="416,92" sap2010:WorkflowViewState.IdRef="Matches_6" Input="[strGenAi]" IsBuilderTabModified="True" Model="[{&quot;Index&quot;:0,&quot;OperationID&quot;:&quot;ADV&quot;,&quot;OperationName&quot;:&quot;Advanced&quot;,&quot;OperationValue&quot;:&quot;(?&lt;=Taxpayer ID:\\s*)\\S+&quot;,&quot;QuantifierFirstValue&quot;:&quot;1&quot;,&quot;QuantifierID&quot;:&quot;EXT&quot;,&quot;QuantifierName&quot;:&quot;Exactly&quot;,&quot;QuantifierSecondValue&quot;:null}]" Pattern="(?&lt;=Taxpayer ID:\s*)\S+" RegexOption="IgnoreCase, Compiled" />
+            <ui:Matches BuilderPattern="(?&lt;=Period:\s*)([0-9]{2}-[0-9]{2}-[0-9]{4}\s+to\s+[0-9]{2}-[0-9]{2}-[0-9]{4})" DisplayName="Find Matching Patterns" FirstMatch="[strPerion]" sap:VirtualizedContainerService.HintSize="416,92" sap2010:WorkflowViewState.IdRef="Matches_7" Input="[strGenAi]" IsBuilderTabModified="True" Model="[{&quot;Index&quot;:0,&quot;OperationID&quot;:&quot;ADV&quot;,&quot;OperationName&quot;:&quot;Advanced&quot;,&quot;OperationValue&quot;:&quot;(?&lt;=Period:\\s*)([0-9]{2}-[0-9]{2}-[0-9]{4}\\s+to\\s+[0-9]{2}-[0-9]{2}-[0-9]{4})&quot;,&quot;QuantifierFirstValue&quot;:&quot;1&quot;,&quot;QuantifierID&quot;:&quot;EXT&quot;,&quot;QuantifierName&quot;:&quot;Exactly&quot;,&quot;QuantifierSecondValue&quot;:null}]" Pattern="(?&lt;=Period:\s*)([0-9]{2}-[0-9]{2}-[0-9]{4}\s+to\s+[0-9]{2}-[0-9]{2}-[0-9]{4})" RegexOption="IgnoreCase, Compiled" />
+            <ui:Matches BuilderPattern="(?&lt;=Summary:\s*)(.*)" DisplayName="Find Matching Patterns" FirstMatch="[strSumarry]" sap:VirtualizedContainerService.HintSize="416,92" sap2010:WorkflowViewState.IdRef="Matches_8" Input="[strGenAi]" IsBuilderTabModified="True" Model="[{&quot;Index&quot;:0,&quot;OperationID&quot;:&quot;ADV&quot;,&quot;OperationName&quot;:&quot;Advanced&quot;,&quot;OperationValue&quot;:&quot;(?&lt;=Summary:\\s*)(.*)&quot;,&quot;QuantifierFirstValue&quot;:&quot;1&quot;,&quot;QuantifierID&quot;:&quot;EXT&quot;,&quot;QuantifierName&quot;:&quot;Exactly&quot;,&quot;QuantifierSecondValue&quot;:null}]" Pattern="(?&lt;=Summary:\s*)(.*)" RegexOption="IgnoreCase, Compiled" />
+            <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="416,118" sap2010:WorkflowViewState.IdRef="MessageBox_2" Text="[strAY+strDeduction+strGross+strTDS+strPan]" />
+            <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{strPayerId,strPan,strAY,strGross,strTDS,strDeduction,strPerion,strSumarry}]" DataTable="[dtTables]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="416,212" sap2010:WorkflowViewState.IdRef="AddDataRow_1" />
+          </Sequence>
+        </ActivityAction>
+      </ui:ForEachFileX.Body>
+    </ui:ForEachFileX>
+    <ui:WriteRange StartingCell="{x:Null}" WorkbookPathResource="{x:Null}" DataTable="[dtTables]" DisplayName="Write Range Workbook" sap:VirtualizedContainerService.HintSize="484,139" sap2010:WorkflowViewState.IdRef="WriteRange_1" SheetName="Sheet1" WorkbookPath="Output.xlsx" />
+  </Sequence>
+</Activity>
